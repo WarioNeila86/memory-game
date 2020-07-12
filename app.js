@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.textContent = cardsFound.length;
         if (cardsFound.length === cardArray.length/2) {
             scoreDisplay.textContent = 'Congratulations!! You found them all!';
+            const linkToRestart = document.createElement('p');
+            linkToRestart.innerHTML = '<a href="">Restart game</a>';
+            document.body.appendChild(linkToRestart);
         }
     }
 
